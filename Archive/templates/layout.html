@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        {% if title %}
+            <title>Archive - {{ title }}</title>
+        {% else %}
+            <title>Archive</title>
+        {% endif %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css_file.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Archive</a>
+                <a href="/index">Home</a>
+                <a href="/about">About</a>
+            </nav>
+            <hr>
+        </header>
+        <div id="jb-content">
+            <main role="main">
+            {% block content %}{% endblock %}
+            </main>
+        </div>
+        <div id="jb-sidebar">
+            <h2>Sidebar</h2>
+            {% block sidebar %}{% endblock %}
+        </div>
+    </body>
+</html>

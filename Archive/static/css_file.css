@@ -1,0 +1,31 @@
+#jb-container {
+width: 940px;
+margin: 0px auto;
+padding: 20px;
+border: 1px solid #bcbcbc;
+}
+#jb-header {
+padding: 20px;
+margin-bottom: 20px;
+border: 1px solid #bcbcbc;
+}
+#jb-content {
+width: 580px;
+padding: 20px;
+margin-bottom: 20px;
+float: left;
+
+}
+#jb-sidebar {
+width: 260px;
+min-height:800px;
+padding: 20px;
+margin-bottom: 20px;
+float: right;
+border: 1px ridge #bcbcbc;
+}
+#jb-footer {
+clear: both;
+padding: 20px;
+border: 1px solid #bcbcbc;
+}
