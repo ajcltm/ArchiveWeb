@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {% if title %}
             <title>Archive - {{ title }}</title>
         {% else %}
@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css_file.css') }}">
     </head>
     <body>
+        <div id='top'></div>
         <header>
             <nav>
                 <a href="/">Archive</a>
@@ -28,5 +29,6 @@
             <h2>Sidebar</h2>
             {% block sidebar %}{% endblock %}
         </div>
+        <div id='bottom'></div>
     </body>
 </html>
