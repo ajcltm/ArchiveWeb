@@ -17,18 +17,22 @@
                 <a href="/">Archive</a>
                 <a href="/index">Home</a>
                 <a href="/about">About</a>
+                <hr>
             </nav>
-            <hr>
+
         </header>
-        <div id="jb-content">
-            <main role="main">
-            {% block content %}{% endblock %}
-            </main>
+        <div id="jb-container">
+            <div id="jb-content">
+                <main role="main">
+                {% block content %}{% endblock %}
+                </main>
+            </div>
+            <div id="jb-sidebar">
+                <h2>Sidebar</h2>
+                {% block sidebar %}{% endblock %}
+            </div>
         </div>
-        <div id="jb-sidebar">
-            <h2>Sidebar</h2>
-            {% block sidebar %}{% endblock %}
-        </div>
+
         <div id='bottom'></div>
     </body>
 </html>
