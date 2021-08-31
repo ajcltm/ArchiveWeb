@@ -1,7 +1,11 @@
 <style>
   * {
     box-sizing: border-box; /* 길이 계산을 편하게 하기위함. box-sizing에 관한 설명은 아래 링크를 참고해주세요 */
-  }
+}
+
+body{
+font-family:"Franklin Gothic Book"}
+
 
 a {
 text-decoration: none; /* 기본 밑줄을 제거합니다 */
@@ -11,6 +15,10 @@ color: #f77515;
 a:hover {
 text-decoration: underline; /* 마우스 커서가 올라갔을 때 밑줄을 생성합니다*/
 }
+
+img {max-width: 100%; height: auto;}
+span.imageblock {max-width: 100%; height: auto;}
+
 
 header {
     margin: auto; /* header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
@@ -23,6 +31,27 @@ nav {
     position: relative;
     top: 25%;
   }
+
+.dataframe{
+border-top : 1px solid gray;
+border-collapse: collapse;
+border-color:gray;
+font-size: 12.5px;
+
+}
+th, td{
+border-bottom : 1px solid gray;
+padding: 5px 5px;
+color: white;
+background-color: #2e2e38;
+text-align: center;
+}
+
+th{
+border-bottom : 1px solid gray;
+background-color: #26252b;
+}
+
 
 #jb-container {
 margin: auto; /* header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
